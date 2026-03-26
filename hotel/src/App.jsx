@@ -3,9 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import Event1 from './component/Event page/event1'
-import Navbar from './component/Event page/navbar page/navbar'
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css'
+import Event2 from './component/Event page/event2'
 
 
 
@@ -15,6 +15,8 @@ function App() {
   return (
     <>
     <BrowserRouter>
+      <Event1 />
+      <Event2 />
     <Routes>
       <Route path="/event" element={<Event1 />} />
     </Routes>
