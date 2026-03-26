@@ -2,8 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import Event1 from './component/Event page/event1'
+import Navbar from './component/Event page/navbar page/navbar'
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
 import './App.css'
-import CallPage from './Call-component-page/call-page'
 
 
 
@@ -12,8 +14,12 @@ function App() {
 
   return (
     <>
-      <CallPage/>
-      
+    <BrowserRouter>
+    <Routes>
+      <Route path="/event" element={<Event1 />} />
+    </Routes>
+     
+      </BrowserRouter>
     </>
   )
 }
