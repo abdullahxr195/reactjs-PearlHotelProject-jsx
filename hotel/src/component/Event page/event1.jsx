@@ -1,6 +1,6 @@
 import React from "react";
 
-import {Card , CardActionArea, CardMedia, CardContent , Typography ,Button} from '@mui/material';
+import {Card , CardActionArea, CardMedia, CardContent , Typography ,Button, CardActions} from '@mui/material';
 export default function Event1() {
     return (
         <>
